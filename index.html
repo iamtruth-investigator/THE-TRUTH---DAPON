@@ -1,0 +1,108 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE TRUTH - DAPON</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>THE TRUTH - DAPON</h1>
+        <p class="tagline">The truth that everyone hides</p>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Anti-Corruption</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">Submit Tip</a></li>
+                <li><a href="#">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Breaking Truth. Independent News.</h2>
+            <p>Stay informed with real-time updates from around the world.</p>
+        </section>
+
+        <section class="tools">
+            <input type="text" id="searchInput" placeholder="Search news..." onkeyup="searchNews()" />
+            <button onclick="showNotification()">Enable Alerts</button>
+        </section>
+
+        <section class="login-box" id="loginBox">
+            <h3>Login</h3>
+            <input type="text" id="loginName" placeholder="Enter your name" />
+            <button onclick="loginUser()">Login</button>
+            <p id="loginGreeting"></p>
+        </section>
+
+        <section class="comments" id="commentBox" style="display:none;">
+            <h3>Comments</h3>
+            <textarea id="commentText" placeholder="Write your comment..."></textarea>
+            <button onclick="postComment()">Post Comment</button>
+            <div id="commentList"></div>
+        </section>
+
+        <section class="news">
+            <h3>Latest News</h3>
+            <div class="news-grid">
+                <article>
+                    <h4>Headline 1</h4>
+                    <p>Summary of news article goes here...</p>
+                </article>
+                <article>
+                    <h4>Headline 2</h4>
+                    <p>Another news update with real facts...</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="anti-corruption">
+            <h3>Truth Uncovered: Anti-Corruption Reports</h3>
+            <p>Investigating what others hide. No bias. No fear.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 THE TRUTH - DAPON. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
